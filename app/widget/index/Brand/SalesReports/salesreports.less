@@ -1,0 +1,71 @@
+.orderanalysis{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    background: #f2f2f9;
+    .content{
+        display: flex;
+        flex-grow: 1;
+        flex-direction: column;
+        overflow: auto;
+        .analysis-box{
+            flex: 1 0;
+            display: flex;
+            flex-direction: column;
+            .msg{
+                width: 700px;
+                color: #faad14;
+                background: rgba(250, 173, 20, 0.1);
+                padding: 5px 2px;
+                display: flex;
+                align-items: center;
+                font-size: 12px;
+                margin-bottom: 20px;
+            }
+            .action-box{
+                
+                display: flex;
+                justify-content: space-between;
+            }
+            .tab-box{
+                display: flex;
+                margin-top: 10px;
+                flex-direction: column;
+                justify-content: space-between;
+                flex: 1;
+                .ant-table-thead > tr.ant-table-row-hover:not(.ant-table-expanded-row) > td, .ant-table-tbody > tr.ant-table-row-hover:not(.ant-table-expanded-row) > td, .ant-table-thead > tr:hover:not(.ant-table-expanded-row) > td, .ant-table-tbody > tr:hover:not(.ant-table-expanded-row) > td {
+                    background:none;
+                }
+                .name{
+                    background:white;
+                    &:hover{
+                        background:white;
+                    }
+                }
+                .type{
+                    background:white;
+                    &:hover{
+                        background:white;
+                    }
+                }
+                .total{
+                    background:white;
+                    &:hover{
+                        background:white;
+                    }
+                }
+            }
+        }
+        .footer{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 20px;
+            flex-shrink: 0;
+            .info{
+                font-size: 14px;
+                color: #999;
+            }
+        }
+    }
+}

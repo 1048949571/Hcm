@@ -1,0 +1,49 @@
+.suspent-exception-order-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  > .search-container {
+    background-color: #fff;
+    padding: 30px 20px 30px 32px;
+    margin-bottom: 10px;
+    > .row-content {
+      > .item {
+        > span:first-of-type {
+          margin-right: 14px;
+        }
+        &:nth-of-type(n+4) {
+          margin-top: 18px;
+        }
+        &:nth-of-type(3n+2) {
+          text-align: center;
+          > span {
+            display: inline-block;
+            width: 60px;
+            text-align: right;
+          }
+          > div:last-of-type {
+            text-align: left;
+          }
+        }
+        &:nth-of-type(3n+3) {
+          text-align: right;
+          > span.ant-calendar-picker {
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+  > .table-content-wrapper {
+    flex: 1;
+    background-color: #fff;
+    padding: 30px 20px;
+    > .table {
+      .ant-table-thead {
+        .table-column-item, .ant-table-expand-icon-th {
+          background-color: #F3F7FF;
+        }
+      }
+    }
+  }
+}

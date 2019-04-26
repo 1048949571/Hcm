@@ -1,0 +1,64 @@
+.DataDetails{
+    display: flex;
+    flex-direction: column;
+    background: #f2f2f9;
+    flex-grow: 1;
+    // justify-content: center;
+    // align-items: center;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    // padding: 20px 40px;
+    // overflow-y: scroll;
+    overflow: auto;
+   
+
+    .ChangeHistoryBOXs{
+        background: #fff;
+        flex: 1;
+        padding: 20px;
+        position: relative;
+        // margin: 10px 20px;
+        &:not(:first-of-type) {
+            margin-top: 10px;
+        }
+        .DataTit{
+            padding: 20px 20px 20px 0;
+            
+        }
+        .DataTits{
+            padding: 0px 20px 20px 0;
+        }
+        .DataSpan{
+            float:right;
+            color:#333;
+            font-size:16px;
+            font-weight:bold;
+            span{
+                display: inline-block; 
+            }
+        }
+        .footer{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            flex-shrink: 0;
+            .info{
+                font-size: 14px;
+                color: #999;
+                width: auto;
+                flex: 1;
+            }
+            .ant-pagination {
+                flex: 2;
+                text-align: right;
+            }
+        }
+      
+    }
+  
+    .Copyright{
+        margin-top: 20px;
+    }
+}

@@ -1,0 +1,243 @@
+.CustomerOverview{
+    // display: flex;
+    // flex-direction: column;
+    background: #f2f2f9;
+    flex-grow: 1;
+    overflow: auto;
+    #container{
+        flex: 1;
+    }
+    .scale-box{
+        overflow: auto;
+        position: relative;
+        .bs-box{
+            position: fixed;
+            // right: 0;
+            // bottom: 0;
+            right: 50px;
+            bottom: 50px;
+            padding: 10px 20px;
+            width: 120px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+            z-index: 999;
+            .anticon{
+                font-size: 14px;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .tabs-wrapper {
+        .ant-tabs-bar {
+            background-color: #fff;
+            margin-bottom: 8px;
+        }
+        .ant-tabs-content {
+            .tabs-item-wrapper {
+                &:last-of-type {
+                    min-height: 692px;
+                    background-color: #fff;
+                    > div.ant-tabs {
+                        height: 100%;
+                        > div.ant-tabs-content {
+                            height: inherit;
+                            padding: 20px 20px 0;
+                            > .sub-tabpane-item {
+                                height: inherit;
+                                &:nth-of-type(2) {
+                                    > .department-search-container {
+                                        display: flex;
+                                        justify-content: space-between;
+                                        align-items: center;
+                                        margin-bottom: 35px;
+                                        h6 {
+                                            font-size: 16px;
+                                            color: #666;
+                                        }
+                                    }
+                                    > .tree-container {
+                                        .parentNode {
+                                            color: #108CEE;
+                                        }
+                                        .activeTreeNode {
+                                            display: flex;
+                                            align-items: center;
+                                            color: #B49E7A;
+                                            &::after {
+                                                content: "";
+                                                display: inline-block;
+                                                width: 24px;
+                                                height: 18px;
+                                                margin-left: 8px;
+                                                background-image: url('../../../../img/section.png');
+                                                background-repeat: no-repeat;
+                                                background-size: cover;
+                                            }
+                                        }
+                                    }
+                                }
+                                #piechart-container {
+                                    height: inherit;
+                                }
+                            }
+                            > .shop-document-info {
+                                // height: inherit;
+                                #tree-container {
+                                    height: 640px;
+                                }
+                            }
+                        }
+                    }
+                    .condition-container {
+                        display: flex;
+                        justify-content: space-between;
+                        > span {
+                            width: 280px;
+                            > span {
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+                .content-wrapper {
+                    .top-container {
+                        &::after {
+                            content: "";
+                            display: block;
+                            clear: both;
+                        }
+                        .dealer-shop-percent-wrapper, .shop-sales-rank-wrapper {
+                            box-sizing: border-box;
+                            height: 510px;
+                        }
+                        .dealer-shop-percent-wrapper > div.ant-card-body {
+                            padding: 0;
+                            height: 453px;
+                            > #shop-pie-wrapper {
+                                height: inherit;
+                            }
+                        }
+                        .shop-sales-rank-wrapper {
+                            .list-item-row {
+                                margin-bottom: 20px;
+                                &:last-of-type {
+                                    margin-bottom: 0;
+                                }
+                                .index-num {
+                                    display: inline-block;
+                                    width: 20px;
+                                    height: 20px;
+                                    border-radius: 50%;
+                                    line-height: 20px;
+                                    text-align: center;
+                                    color: #666;
+                                    background-color: #F0F3FC;
+                                    font-size: 14px;
+                                    &.active {
+                                        background-color: #BDA571;
+                                        color: #fff;
+                                    }
+                                }
+                                .overflow-ellipsis {
+                                    white-space: nowrap;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                }
+                            }
+                        }
+                    }
+                    .middle-container {
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                        box-sizing: border-box;
+                        // height: 240px;
+                        // overflow: hidden;
+                        .progress-wrapper {
+                            > div {
+                                position: relative;
+                                text-align: center;
+                                .rank-num {
+                                    position: absolute;
+                                    top: 0;
+                                    left: 10px;
+                                    width: 17px;
+                                    height: 17px;
+                                    line-height: 17px;
+                                    text-align: center;
+                                    font-size: 14px;
+                                    background-color: #BFBFBF;
+                                    color: #fff;
+                                    &.active {
+                                        background-color: #FAD337;
+                                    }
+                                }
+                                .shop-name {
+                                    color: #666;
+                                    font-size: 14px;
+                                    margin-top: 11px;
+                                    white-space: nowrap;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                }
+                            }
+                        }
+                    }
+                    .bottom-container {
+                        display: flex;
+                        justify-content: space-between;
+                        > div.ant-card {
+                            box-sizing: border-box;
+                            flex: 49.6% 0 0;
+                            .list-item-wrapper {
+                                margin-bottom: 15px;
+                                &:last-of-type {
+                                    margin-bottom: 0;
+                                }
+                                .list-index {
+                                    display: inline-block;
+                                    width: 20px;
+                                    height: 20px;
+                                    line-height: 20px;
+                                    text-align: center;
+                                    background-color: #F0F3FC;
+                                    font-size: 14px;
+                                    color: #666;
+                                    border-radius: 50%;
+                                    &.bg-container {
+                                        background-color: transparent;
+                                        width: 23px;
+                                        height: 26px;
+                                        background-repeat: no-repeat;
+                                        background-size: cover;
+                                    }
+                                    &.index1 {
+                                        background-image: url('../../../../img/index1.png');
+                                    }
+                                    &.index2 {
+                                        background-image: url('../../../../img/index2.png');
+                                    }
+                                    &.index3 {
+                                        background-image: url('../../../../img/index3.png');
+                                    }
+                                }
+                                .overflow-ellipsis {
+                                    white-space: nowrap;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                }
+                                > div:last-of-type > .ant-progress {
+                                    .ant-progress-inner {
+                                        background-color: #fff;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}

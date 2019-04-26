@@ -1,0 +1,122 @@
+.triangle (@bgColor, @borderMainColor, @borderSubColor: #F6F5F5) {
+    background-color: @bgColor;
+    &::before {
+        content: "";
+        display: block;
+        border: 2px solid @borderMainColor;
+        border-left-color: @borderSubColor;
+        border-bottom-color: @borderSubColor;
+        position: absolute;
+        left: 0;
+        bottom: -4px;
+    }
+}
+
+.service-wrapper {
+    > .header-wrapper {
+        display: none;
+    }
+    > .layout-content {
+        padding-left: 15px;
+        padding-right: 15px;
+        > .KEFUhome-wrapper {
+            div.ant-col-8 {
+                box-sizing: border-box;
+                &:nth-of-type(n+4) {
+                    margin-top: 10px;
+                }
+                > div.ant-card > div.ant-card-body {
+                    // min-height: 526px;
+                    height: 560px;
+                    padding: 0;
+                    padding-bottom: 18px;
+                    > .sub-title-wrapper {
+                        position: relative;
+                        display: inline-flex;
+                        align-items: center;
+                        margin: 11px 0 18px;
+                        > .total {
+                            display: inline-block;
+                            padding: 0 18px 2px;
+                            height: 28px;
+                            line-height: 28px;
+                            font-size: 20px;
+                            color: #fff;
+                            transform: translateX(-4px);
+                        }
+                        > .sub-title {
+                            margin-left: 9px;
+                            color: #999;
+                        }
+                    }
+                    > .list-wrapper {
+                        padding: 0 20px;
+                        div.ant-list-header {
+                            border-bottom: 0;
+                            padding: 0;
+                            color: #333;
+                            margin-bottom: 20px;
+                        }
+                        .list-item-wrapper {
+                            margin-bottom: 20px;
+                        }
+                        > .ant-list-pagination {
+                            margin-top: 0;
+                        }
+                    }
+                }
+                &:not(:first-of-type) {
+                    .list-wrapper {
+                        div.ant-list-header {
+                            > div.ant-row > div:last-of-type {
+                                text-align: right;
+                            }
+                        }
+                        .list-item-wrapper {
+                            margin-bottom: 20px;
+                            > div:nth-of-type(2) {
+                                white-space: nowrap;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                padding-right: 8px;
+                            }
+                            > div:last-of-type {
+                                text-align: right;
+                            }
+                        }
+                    }
+                }
+                &:nth-of-type(1) {
+                    .total {
+                        .triangle(#3AA0FF, #1179D9);
+                    }
+                }
+                &:nth-of-type(2) {
+                    .total {
+                        .triangle(#FAD337, #CB9500);
+                    }
+                }
+                &:nth-of-type(3) {
+                    .total {
+                        .triangle(#4DCB73, #2F8013);
+                    }
+                }
+                &:nth-of-type(4) {
+                    .total {
+                        .triangle(#36CBCB, #0E6F77);
+                    }
+                }
+                &:nth-of-type(5) {
+                    .total {
+                        .triangle(#F2637B, #95332F);
+                    }
+                }
+                &:nth-of-type(6) {
+                    .total {
+                        .triangle(#975FE4, #592A98);
+                    }
+                }
+            }
+        }
+    }
+}

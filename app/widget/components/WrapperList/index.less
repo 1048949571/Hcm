@@ -1,0 +1,41 @@
+.wrapper-list-component {
+  > .ant-card-body {
+    padding: 0 20px 28px;
+    > .wrapper-list {
+      > .ant-list-header {
+        border-bottom: 0;
+        padding: 28px 0;
+        > .ant-row > div:last-of-type {
+          text-align: right;
+        }
+        img {
+          display: none;
+        }
+      }
+      .item-container {
+        &:not(:first-of-type) {
+          margin-top: 30px;
+        }
+        > div:first-of-type {
+          text-align: left;
+          & > .icon {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-color: #BDA571;
+            text-align: center;
+            line-height: 20px;
+            border-radius: 50%;
+            color: #fff;
+          }
+        }
+        > div:last-of-type {
+          text-align: right;
+        }
+      }
+      > .ant-list-pagination {
+        margin-top: 20px;
+      }
+    }
+  }
+}

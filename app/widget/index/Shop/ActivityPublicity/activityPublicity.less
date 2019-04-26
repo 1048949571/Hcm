@@ -1,0 +1,166 @@
+.shop-activity-publicity-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  > .day-cards-wrapper {
+    flex: 0 0 auto;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #fff;
+    display: flex;
+    > .item {
+      flex: 1;
+      box-sizing: border-box;
+      border: 1px solid #E8EBEC;
+      padding: 20px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.1s linear;
+      &:not(:last-of-type) {
+        border-right: none;
+      }
+      > .top {
+        margin-bottom: 28px;
+        color: #666;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: 500;
+        height: 30px;
+        > .week > .currentDay {
+          display: inline-block;
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          background-color: rgba(250,173,20,0.3);
+          line-height: 30px;
+          text-align: center;
+          font-size: 12px;
+          color: #333;
+          margin-left: 6px;
+        }
+        > .day {
+          font-size: 22px;
+          color: #BDA571;
+          font-weight: 500;
+        }
+      }
+      > .bottom {
+        color: #333;
+        font-weight: 500;
+      }
+      &.active {
+        border-top: 4px solid #FAAD14;
+        box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+  > .main-content {
+    flex: 1;
+    margin-top: 10px;
+    background-color: #fff;
+    padding: 18px 20px;
+    > .condition {
+      text-align: right;
+      > .btns {
+        margin-right: 10px;
+        vertical-align: top;
+      }
+    }
+    > .shops {
+      > .shop-item {
+        cursor: pointer;
+        &:nth-of-type(n+4) {
+          margin-top: 10px;
+        }
+        > div {
+          box-sizing: border-box;
+          display: flex;
+          flex-direction: column;
+          padding: 20px;
+          border: 1px solid #E1E1E1;
+          > .info {
+            display: flex;
+            align-items: center;
+            > .avatar {
+              width: 34px;
+              height: 34px;
+              background-color: #108CEE;
+            }
+            > .title {
+              color: #333;
+              font-size: 16px;
+              margin-left: 10px;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              overflow: hidden;
+              width: 80%;
+            }
+          }
+          > .desc {
+            font-size: 14px;
+            color: #666;
+            margin-top: 6px;
+            margin-left: 44px;
+            > span {
+              font-size: 18px;
+              color: #333;
+              font-weight: bold;
+              padding: 0 6px;
+            }
+          }
+        }
+      }
+    }
+    > .products {
+      > .list-content {
+        border-radius: 0;
+        border-color: #E8EBEC;
+        .pro-item {
+          cursor: pointer;
+          border-bottom: 1px solid #E8EBEC;
+          padding: 16px 20px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          > .left {
+            flex: 1;
+            > .infos {
+              margin-top: 13px;
+              > .item {
+                &:not(:first-of-type) {
+                  margin-left: 30px;
+                }
+                &:nth-of-type(n+5) {
+                  display: none;
+                }
+              }
+            }
+          }
+          > .right {
+            color: #333;
+            flex: 0 0 200px;
+            text-align: right;
+            > span {
+              font-size: 20px;
+            }
+          }
+          &:last-of-type {
+            border-bottom: none;
+          }
+        }
+      }
+    }
+    > .products, > .shops {
+      > .more-btn {
+        width: 30%;
+        margin: 20px auto;
+        text-align: center;
+        > button {
+          width: 100%;
+          border: 1px dashed #E8EBEC;
+        }
+      }
+    }
+  }
+}

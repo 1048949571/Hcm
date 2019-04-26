@@ -1,0 +1,141 @@
+.brand-home{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    background: #f2f2f9;
+    .content{
+        display: flex;
+        
+        flex-grow: 1;
+        flex-direction: column;
+        overflow: auto;
+        padding: 10px;
+        .flex-row{
+            display: flex;
+            flex: 0 0;
+            .ant-card-head-title{
+                font-size: 14px;
+                padding: 12px 0px;
+            }
+            .warning-box{
+                width: 65%;
+                display: flex;
+                flex-direction: column;
+                .ant-card-grid:hover {
+                    box-shadow: 0px 0px 7px 0px rgba(91,68,30,0.2);
+                }
+                .item{
+                    width: 20%;
+                    padding: 0;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    span{
+                        align-self: flex-start;
+                        font-size: 18px;
+                        color: #333;
+                        padding: 8px;
+                    }
+                    p{
+                        padding-bottom: 30px;
+                        line-height: 40px;
+                        a{
+                            color: #666;
+                        }
+                    }
+                    &:hover{
+                        p a{
+                            color: #108CEE;
+                        }
+                    }
+                }
+            }
+            .todo-list{
+                width: 35%;
+                margin-left: 10px;
+                .item{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    padding: 10px;
+                    align-items: center;
+                    justify-content: space-between;
+                    div{
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        p{
+                            padding-left: 10px;
+                        }
+                    }
+                    span{
+                        font-size: 20px;
+                    }
+                    &:hover{
+                        p{
+                            color: #108CEE;
+                        }
+                    }
+                }
+            }
+            .dealer-box{
+                width: 50%;
+                margin-right: 5px;
+                .ant-card-body{
+                    padding: 0;
+                }
+                #chart-dealers{
+                    height: 30vw;
+                }
+            }
+            .shop-box{
+                width: 50%;
+                margin-left: 5px;
+                .ant-card-body{
+                    padding: 0;
+                }
+                #chart-shops{
+                    height: 30vw;
+                }
+            }
+            .brand-box{
+                width: 100%;
+                .ant-card-body{
+                    padding: 0;
+                }
+                .but{
+                    text-align: center;
+                }
+                .carousel-item{
+                    padding: 10px 2px;
+                    display: flex !important;
+                    justify-content: flex-start;
+                    align-items: center;
+                    .item{
+                        box-shadow: 0px 0px 5px 0px rgba(11, 72, 120, 0.15);
+                        width: 15%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        padding: 30px 0px;
+                        margin-right: 22px;
+                        &:nth-child(6){
+                            margin-right: 0px;
+                        }
+                    }
+                }
+            }
+            .plat-box{
+                display: flex;
+            }
+        }
+    }
+    .copyright{
+        font-size: 14px;
+        height: 40px;
+        line-height: 40px;
+        color: #666;
+        text-align: center;
+    }
+}
